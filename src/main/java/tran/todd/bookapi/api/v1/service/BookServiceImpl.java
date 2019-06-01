@@ -15,8 +15,9 @@ public class BookServiceImpl implements BookService {
     private BookDAO bookDAO;
 
     @Override
+    @Transactional
     public Long save(Book book) {
-        return null;
+        return bookDAO.save(book);
     }
 
     @Override
