@@ -14,7 +14,7 @@ import static org.hibernate.cfg.Environment.*;
 @PropertySource("classpath:db.properties") // tell spring where the db.properties file is.
 @EnableTransactionManagement
 @ComponentScans(value = {
-    @ComponentScan("tran.todd.bookapi.api.v1.repository"),
+    @ComponentScan("tran.todd.bookapi.api.v1.dao"),
     @ComponentScan("tran.todd.bookapi.api.v1.service")
 })
 public class AppConfig {
