@@ -1,6 +1,6 @@
 # This is a repository following the Udemy course [here](https://www.udemy.com/build-an-angular-and-spring-mvc-web-application)
 
-# Notes (section 3, video 7)
+# Notes (section 3, video 8)
     - 
     
 # Summary
