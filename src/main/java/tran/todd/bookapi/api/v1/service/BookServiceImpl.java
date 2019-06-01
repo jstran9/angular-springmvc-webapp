@@ -33,8 +33,9 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
+    @Transactional
     public void update(Long id, Book book) {
-
+        bookDAO.update(id, book);
     }
 
     @Override

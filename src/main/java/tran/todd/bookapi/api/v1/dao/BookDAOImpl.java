@@ -1,5 +1,6 @@
 package tran.todd.bookapi.api.v1.dao;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -32,7 +33,11 @@ public class BookDAOImpl implements BookDAO {
 
     @Override
     public void update(Long id, Book book) {
-
+        Session session = sessionFactory.getCurrentSession();
+        Book oldBook = session.byId(Book.class).load(id);
+        oldBook.setTitle(book.getTitle());
+        oldBook.setAuthor(book.getAuthor());
+        session.flush();
     }
 
     @Override
