@@ -8,6 +8,7 @@ import tran.todd.bookapi.api.v1.service.BookService;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/")
 public class BookController {
