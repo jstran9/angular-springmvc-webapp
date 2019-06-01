@@ -21,7 +21,7 @@ public class BookDAOImpl implements BookDAO {
 
     @Override
     public Book get(Long id) {
-        return null;
+        return sessionFactory.getCurrentSession().get(Book.class, id);
     }
 
     @Override
