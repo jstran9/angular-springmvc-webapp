@@ -32,4 +32,11 @@ public class BookController {
         Long bookId = bookService.save(book);
         return ResponseEntity.ok().body("Book created with id: " + bookId);
     }
+
+    // Get a single record with id.
+    @GetMapping("book/{id}")
+    public ResponseEntity<Book> get(@PathVariable Long id) {
+        Book book = bookService.get(id);
+        return ResponseEntity.ok().body(book);
+    }
 }
