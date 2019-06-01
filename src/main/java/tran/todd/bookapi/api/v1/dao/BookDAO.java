@@ -4,7 +4,7 @@ import tran.todd.bookapi.api.v1.model.Book;
 
 import java.util.List;
 
-public interface BookDao {
+public interface BookDAO {
 
     // Save the record
     Long save(Book book);

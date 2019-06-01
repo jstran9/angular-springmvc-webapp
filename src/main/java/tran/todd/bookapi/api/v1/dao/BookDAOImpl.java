@@ -8,7 +8,7 @@ import tran.todd.bookapi.api.v1.model.Book;
 import java.util.List;
 
 @Repository
-public class BookDaoImpl implements BookDao {
+public class BookDAOImpl implements BookDAO {
 
     @Autowired
     private SessionFactory sessionFactory;
