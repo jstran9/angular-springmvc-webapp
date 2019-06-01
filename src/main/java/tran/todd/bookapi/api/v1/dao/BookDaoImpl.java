@@ -2,10 +2,12 @@ package tran.todd.bookapi.api.v1.dao;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import tran.todd.bookapi.api.v1.model.Book;
 
 import java.util.List;
 
+@Repository
 public class BookDaoImpl implements BookDao {
 
     @Autowired
