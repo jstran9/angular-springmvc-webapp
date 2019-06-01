@@ -42,6 +42,8 @@ public class BookDAOImpl implements BookDAO {
 
     @Override
     public void delete(Long id) {
-
+        Session session = sessionFactory.getCurrentSession();
+        Book book = session.byId(Book.class).load(id);
+        session.delete(book);
     }
 }
